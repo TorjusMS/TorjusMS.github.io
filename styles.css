@@ -41,6 +41,8 @@ body {
 .logo {
     height: 80px;
     width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* Main content */
@@ -263,10 +265,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     letter-spacing: 0.02em;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
 .footer a {
@@ -297,6 +302,10 @@ body {
         --spacing-unit: 1.5rem;
     }
 
+    .logo {
+        height: 60px;
+    }
+
     .hero h1 {
         font-size: 3.5rem;
     }
@@ -304,4 +313,14 @@ body {
     .services-grid {
         grid-template-columns: 1fr;
     }
+
+    .footer p:first-child {
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .footer span {
+        display: none;
+    }
+}
 }
