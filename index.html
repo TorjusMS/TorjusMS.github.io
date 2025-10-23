@@ -21,8 +21,8 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                <h1>En</h1>
-                <p class="lead">Vi er en liten </p>
+                <h1>Hei!</h1>
+                <p class="lead">Vi er en liten bedrift bestående av teknologifolk. Vi er ingeniører med bakgrunn fra mekatronikk og kybernetikk og vi bruker vår kompetanse til å hjelpe bedrifter med OT, automasjon, robotikk, industriell AI m.m.</p>
             </div>
         </section>
 
@@ -32,15 +32,15 @@
                 <div class="services-grid">    
                     <div class="service-card">
                         <h3>Softwareutvikling</h3>
-                        <p>Vi har mange års erfaring med softwareutvikling til forsvar, olje- og gassindustrien etc. Vi kan leies inn som konsulenter eller utviklere ved behov.</p>
+                        <p>Vi har mange års erfaring med softwareutvikling til forsvar, olje- og gassindustrien etc. Vi kan leies inn som konsulenter/utviklere på timer eller vi kan sette oss ned med dere og se på større prosjekter.</p>
                     </div>                                               
                      <div class="service-card">
                         <h3>Teknologirådgivning</h3>
-                        <p>Produksjonsanalyse, behovsvurdering, innkjøpsprosesser. Mange bedrifter er usikre på hvilke teknologiske løsninger som passer best for dem.</p>
+                        <p>Produksjonsanalyse, behovsvurdering, innkjøpsprosesser. Mange bedrifter er usikre på hvilke teknologiske løsninger som passer best for dem. Vi har erfaring med å hjelpe bedrifter med å finne de riktige løsningene for deres behov og sondere markedet for tilbydere.</p>
                     </div>        
                     <div class="service-card">
-                        <h3>Produktutvikling</h3>
-                        <p>Fra idé til ferdig produkt og alt imellom. Vi har erfaring med hele prosessen, fra konseptutvikling til testing og lansering.</p>
+                        <h3>Prototypeutvikling</h3>
+                        <p>Hvis du har en god idé, kan vi hjelpe deg med å realisere den gjennom prototypeutvikling. Vi har erfaring med å lage prototyper som kan testes og evalueres før endelig produksjon. Du beholder selvsagt eierskapet til ideen din, vi er her for å hjelpe deg med å realisere den.</p>
                     </div>
                 </div>
             </div>
@@ -48,9 +48,9 @@
 
         <section class="contact">
             <div class="container">
-                <h2>Ta kontakt</h2>
+                <h2>Interessert i å vite mer?</h2>
                 <div class="contact-info">                
-                    <a href="mailto:hello@leftpole.no" class="contact-button">Kontakt oss</a>
+                    <a href="mailto:hello@leftpole.no" class="contact-button">Ta kontakt</a>
                 </div>
             </div>
         </section>
@@ -67,8 +67,13 @@
                 <span>|</span>
                 <a href="https://maps.app.goo.gl/9yVRNqF61pbDrNwu6" target="_blank">Kristiansand, Norge</a>
             </p>
-            <p>&copy; 2025 Leftpole AS. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Leftpole AS. All rights reserved.</p>
         </div>
     </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('year').textContent = new Date().getFullYear();
+            });
+        </script>
 </body>
 </html>
